@@ -1,0 +1,6 @@
+node_modules
+dist
+.vscode
+.parcel-cache
+Landing_Page.html
+landing_page_stylesheet.css

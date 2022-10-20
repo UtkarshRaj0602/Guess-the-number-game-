@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Guess The Number Game" content="This is a game which has been developed to check your luck and of course your IQ"/>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+<!-- Favicon -->
+<link rel='shortcut icon' type='image/x-icon' href='./Images/Favicon.png' />
+<!-- CSS -->
+<link rel="stylesheet" href="./game_style.css">
+<title>Guess The Number - Game !!</title>
+</head>
+<body>
+     <!-- Content -->
+     <section class="wrapper">
+          <div class="Main_content container-sm position-absolute top-50 start-50 translate-middle shadow-lg">
+               <div class="container-sm py-5">
+                    <div class="buttons row row-cols-2">
+                         <div class="col-sm-6">
+                              <div class="Reload_Button">
+                                   <button type="button" class="reload btn btn-dark">Reload Game</button>    
+                              </div>
+                         </div>
+                         <div class="col-sm-6">
+                              <div class="Help_Button">
+                                   <button type="button" class="help btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">How to Play</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- Game Heading and Display -->
+               <div class="heading text-center mx-auto">
+                    <div class="row">
+                         <div class="col-xxl-12 col-sm-12 col-12">
+                              <h2 class="Display_Message">Can You Guess The Number?</h2>
+                              <div class="Number_Display_Box my-2 pt-4 pb-4 mx-auto text-center">
+                                   <div class="row">
+                                        <div class="col">
+                                             <div class="card">
+                                               <div class="card-body">
+                                                 <div class="display_user_input text-center mx-auto"><span class="user_number_input_display position-absolute top-50 start-50 translate-middle" placeholder="Your Guessed Number Will Appear Here ">?</span></div>
+                                               </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- User Game Content  -->
+               <div class="User_data text-center mx-auto mt-2">
+                    <div class="row">
+                         <div class="col-sm-6">
+                           <div class="words card">
+                             <div class="card-body">
+                               <h5 class="Message mb-3 mt-3">Start Guessing....</h5>
+                               <h5 class="Life_count mb-3">Life Left: <span class="Lifes_Left_count">8</span></h5>
+                               <h5 class="High_Score mb-3">HighScore: <span class="High_Score_count">0</span></h5>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="col-sm-6">
+                           <div class="input card">
+                             <div class="card-body">
+                                   <div class="User_Guess_Box my-1 mb-4 mx-auto"><input type="number" class="User_Inputed_Number" placeholder="  Type guessed number"></div>
+                                   <div class="Button_check_number my-3"><button type="button" class="user_input_check_btn btn btn-dark">Check !!</button></div>
+                             </div>
+                           </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <embed class="background_music" src="./Backgrond_Music/IcyKiddo_-_BANKAI_SHUNSUI_X_KISUKE_(PHONK)(256k).mp3" loop="true" autostart="true" width="2" height="0">
+     </section>
+     <section class="modal_here">
+           <!-- Modal -->
+           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+               <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                    <ul class="Indtructions_list">
+                         <li class="Instruction-items">A random number is generated at the start of each round, which is in between the number's 1 and 20.</li>
+                         <li class="Instruction-items">Your task is to guess that random number and for that a total of 8 life's has been provided to you.</li>
+                         <li class="Instruction-items">If you guess the random number in the first go, then your high score will be added to 100 points with a decrease of 20 points for every 2 life's.</li>
+                         <li class="Instruction-items">The more life's you take to guess the number, the more high score you loose by 10 points.</li>
+                         <li class="Instruction-items">[Click on (Reload Game) button to start/reload the game again.]</li>
+                         <li class="Instruction-items">[Note: Keep an eye on the (Start Guessing....) message, it might come handy.]</li>
+                    </ul>
+               </div>
+               <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+               </div>
+               </div>
+               </div>
+          </div>
+     </section>
+<script type="text/javascript" src="./Game_script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

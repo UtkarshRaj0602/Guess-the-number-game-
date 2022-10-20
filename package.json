@@ -1,0 +1,19 @@
+{
+  "name": "guess-the-number-game",
+  "version": "1.0.0",
+  "description": "Guess the number game",
+  "default": "Game.html",
+  "scripts": {
+    "start": "parcel Game.html",
+    "build": "parcel build Game.html --dist-dir ./dist"
+  },
+  "keywords": [
+    "Number",
+    "Game"
+  ],
+  "author": "Utkarsh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
