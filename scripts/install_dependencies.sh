@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /var/www/html/Guess-the-number-game-/
+cd /Guess-the-number-game-/
 npm install
